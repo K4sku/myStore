@@ -21,3 +21,9 @@ document.addEventListener("turbolinks:load", () => {
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+console.log('Hello World from Webpacker - pure js');
+
+$(function () {
+    console.log('Hello World from Webpacker - jquery');
+});
