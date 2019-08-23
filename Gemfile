@@ -2,8 +2,10 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
-
+# fiagro ENV for database
 gem 'figaro', '~> 1.1', '>= 1.1.1'
+# process image
+gem 'image_processing', '~> 1.9', '>= 1.9.3'
 # Use SCSS for stylesheets
 gem 'sassc'
 gem 'sassc-rails'
