@@ -35,9 +35,17 @@
   <%= @item.storage_count %>
 </p>
 
-<p>
-  <%= image_tag @item.image.variant(resize_to_fit: [200, 200]) %>
-</p>
+<% if @item.images.attached? %>
+  <p>
+    <% @item.images.each do |image| %>
+      <%= image_tag image.variant(resize_to_fit: [200, 200]) %>
+      <%= link_to 'Remove photos', delete_image_attachment_item_url(image.id),
+                  method: :delete,
+                  data: { confirm: 'Are you sure?' } %>
+    <% end %>
+    <br>
+  </p>
+<% end %>
 
 <%= link_to 'Edit', edit_item_path(@item) %> |
 <%= link_to 'Back', items_path %>

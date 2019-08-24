@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
-  before_action :set_item, only: [:show, :edit, :update, :destroy]
+  before_action :set_item, only: [:show, :edit, :update, :destroy, :delete_image_attachment]
 
   # GET /items
   # GET /items.json
@@ -61,6 +61,12 @@ class ItemsController < ApplicationController
     end
   end
 
+  def delete_image_attachment
+    @image = ActiveStorage::Attachment.find(params[:id])
+    @image.purge_later
+    redirect_back(fallback_location: items_path)
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_item
@@ -69,6 +75,6 @@ class ItemsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def item_params
-      params.require(:item).permit(:sku, :product_name, :price, :category, :color, :size, :storage_count, :image)
+      params.require(:item).permit(:sku, :product_name, :price, :category, :color, :size, :storage_count, images: [])
     end
 end
