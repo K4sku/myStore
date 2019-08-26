@@ -2,16 +2,20 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username:  <%= ENV["DB_USERNAME"] %>
-  password:  <%= ENV["DB_PASSWORD"] %>
+  username:  webapp
+#  username:  <%= Figaro.env.db_username %>
+  password:  webapp
+#  password:  <%= Figaro.env.db_password %>
 
 development:
   <<: *default
   database: myStore_development
+  host: localhost
 
 test:
   <<: *default
   database: myStore_test
+  host: localhost
 
 production:
   <<: *default
