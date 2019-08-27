@@ -62,19 +62,19 @@ class ItemsController < ApplicationController
   end
 
   def delete_image_attachment
-    @image = ActiveStorage::Attachment.find(params[:id])
-    @image.purge_later
-    redirect_back(fallback_location: items_path)
+    @item.images.find(params[:image_id]).purge
+    redirect_to @item
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_item
-      @item = Item.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def item_params
-      params.require(:item).permit(:sku, :product_name, :price, :category, :color, :size, :storage_count, images: [])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_item
+    @item = Item.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def item_params
+    params.require(:item).permit(:sku, :product_name, :price, :category, :color, :size, :storage_count, images: [])
+  end
 end

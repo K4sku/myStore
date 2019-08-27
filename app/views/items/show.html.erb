@@ -39,7 +39,7 @@
   <p>
     <% @item.images.each do |image| %>
       <%= image_tag image.variant(resize_to_fit: [200, 200]) %>
-      <%= link_to 'Remove photos', delete_image_attachment_item_url(image.id),
+      <%= link_to 'Remove photos', delete_image_attachment_item_url(@item, image_id: image.id),
                   method: :delete,
                   data: { confirm: 'Are you sure?' } %>
     <% end %>
