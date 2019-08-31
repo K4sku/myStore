@@ -1,0 +1,44 @@
+- if !notice.nil?
+  p#notice = notice
+
+p
+  strong Sku:
+  = @item.sku
+
+p
+  strong Product name:
+  = @item.product_name
+
+p
+  strong Price:
+  = @item.price
+
+p
+  strong Category:
+  = @item.category
+
+p
+  strong Color:
+  = @item.color
+
+p
+  strong Size:
+  = @item.size
+
+p
+  strong Storage count:
+  = @item.storage_count
+
+- if @item.images.attached?
+  p
+    - @item.images.each do |image|
+      div
+        = image_tag image.variant(resize_to_fit: [200, 200])
+        = link_to 'Remove photo', delete_image_attachment_item_url(@item, image_id: image.id),
+                    method: :delete,
+                    data: { confirm: 'Are you sure?' }
+    br
+
+= link_to 'Edit', edit_item_path(@item)
+|   |
+= link_to 'Back', items_path
