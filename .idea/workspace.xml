@@ -2,14 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65873313-f552-4c89-af69-2008c4f8bac4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/items/edit.html.slim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/layouts/_messages.html.slim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gems/bootstrap_forms/stylesheets/rails_bootstrap_forms.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/gems/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.generators" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.generators" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/myStore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myStore.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/confirmations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/confirmations/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/shared/_links.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/shared/_links.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/unlocks/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/unlocks/new.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/items/_form.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/items/_form.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/items/edit.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/items/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/items/index.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/items/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/items/show.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/webpacker/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/webpacker/stylesheets/application.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/webpacker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpacker.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Slim File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -41,6 +52,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/vendor/bootstrap_forms" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -49,6 +61,14 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vendor/gems" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vendor/bootstrap_forms" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -121,8 +141,16 @@
       <option name="presentableId" value="Default" />
       <updated>1567267992020</updated>
       <workItem from="1567267993256" duration="2858000" />
-      <workItem from="1567277847495" duration="3741000" />
+      <workItem from="1567277847495" duration="7291000" />
     </task>
+    <task id="LOCAL-00001" summary="erb to slim">
+      <created>1567281870476</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1567281870476</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,7 +169,11 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="erb to slim" />
+    <option name="LAST_COMMIT_MESSAGE" value="erb to slim" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/myStore@development.rcov" NAME="development Coverage Results" MODIFIED="1567279069236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="myStore" />
+    <SUITE FILE_PATH="coverage/myStore@development.rcov" NAME="development Coverage Results" MODIFIED="1567284888484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="myStore" />
   </component>
 </project>
