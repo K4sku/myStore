@@ -1,0 +1,43 @@
+= form_with(model: item, local: true) do |form|
+  - if item.errors.any?
+    div.error_explanation
+    h2 =pluralize(item.errors.count, "error")
+    |prohibited this item from being saved
+    ul
+      - item.errors.full_messages.each do |message|
+        li =message
+
+  div.field
+    = form.label :sku
+    = form.number_field :sku
+
+  div.field
+    = form.label :product_name
+    = form.text_area :product_name
+
+  div.field
+    = form.label :price
+    = form.text_field :price
+
+  div.field
+    = form.label :category
+    = form.text_area :category
+
+  div.field
+    = form.label :color
+    = form.text_field :color
+
+  div.field
+    = form.label :size
+    = form.text_field :size
+
+  div.field
+    = form.label :storage_count
+    = form.number_field :storage_count
+
+  div.field
+    = form.label :images
+    = form.file_field :images, multiple: true
+
+  div.actions
+    = form.submit
