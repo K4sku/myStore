@@ -21,7 +21,6 @@ nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"
             div.devise-bootstrap-form
               div.devise-bootstrap-form-row.p-2
                 div.devise-bootstrap-form-col
-                  / h2 class="text-center" Log in
                   = bootstrap_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
                     = f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'email@example.com'
                     = f.password_field :password, autocomplete: "current-password", placeholder: 'Password'
@@ -36,4 +35,5 @@ nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"
                 div.text-center
                 = render "devise/shared/links"
           - else
+            = link_to 'Edit Profile', edit_user_registration_path
             = link_to 'Logout', destroy_user_session_path, method: :delete
